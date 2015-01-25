@@ -1,0 +1,5 @@
+# This is the file where the line number of the latest production entry 
+# that was used is stored. Comment and empty lines don't count.
+# Index initially at 0, first eligible line is line 1.
+# This file keeps the record of production in filesystem data method
+0

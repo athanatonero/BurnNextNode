@@ -1,0 +1,16 @@
+# Prototypes file
+# Each entry is one line starting with the prototype file name, white space
+# and after that pairs of substitution positions and data types separated by white space
+# Valid data types are IPV4BIG, IPV4LIT, IPV4SWA, MACADDR, HEX8, HEX16, HEX32, STRING
+# IPv4 address types are differnet ways to map the four octets:
+# Decimal dotted IPv4 address 192.168.169.170 is C0 A8 A9 AA in hex and substituted as follows:
+# IPV4BIG C0 A8 A9 AA (big-endian)
+# IPV4LIT AA A9 A8 C0 (little-endian)
+# IPV4SWA A9 AA C0 A8 (swapped words)
+# MAC address and the hex types are susbtituted big-endian. Strings overwrite per character 
+# starting from position without any checks or limits.
+# Operations are performed in the order they are found in the line.
+#
+# Example entries
+#foonode.bin 42 IPV4BIG 112 MACADDR 256 STRING
+#barnode.hex 96 MACADDR 12 HEX16

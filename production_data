@@ -1,0 +1,10 @@
+# Production data file
+# Each entry is one line with substitution values matching the selected
+# prototype entry and separated by white space.
+# IPV4BIG, IPV4LIT and IPV4SWA should be in decimal dotted notation, 
+# MACADDR, HEX8, HEX16 and HEX32 in hex,
+# STRING enclosed in double quotes, no escape characters.
+#
+# Example entries
+#192.168.169.170 DEADBEEFFEED "Temperature sensor in front balcony"
+#CAFFEECAFFEE DEAF
